@@ -1,0 +1,49 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gefahrenanalyse eines Internetknotenpunkts</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; background-color: #f4f4f4; }
+        h1 { color: #004080; }
+        h2 { color: #0066cc; }
+        ul, ol { margin-left: 20px; }
+        .highlight { background-color: #ffffcc; padding: 5px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>Gefahrenanalyse eines Internetknotenpunkts</h1>
+    
+    <h2>Was ist ein Internetknotenpunkt?</h2>
+    <p>Ein Internetknotenpunkt (<strong>Internet Exchange Point, IXP</strong>) ist eine zentrale Infrastruktur, die den Datenverkehr zwischen verschiedenen Netzwerken ermöglicht. Der Internetknotenpunkt stellt eine Verbindung zwischen Internetanbietern und anderen Netzwerken her.</p>
+    
+    <h2>1. Mögliche Schwachstellen</h2>
+    <p>Ein IXP kann durch verschiedene Bedrohungen gefährdet werden:</p>
+    <ul>
+        <li><strong>DDoS-Angriffe:</strong> Überlastung durch massenhafte Anfragen.</li>
+        <li><strong >BGP-Hijacking:</strong> Manipulation des Border Gateway Protocols (BGP), um Datenverkehr umzuleiten. Dabei täuscht ein Angreifer vor, dass sein Netzwerk der beste Weg für bestimmte Datenströme ist wodurch er diese abfangen oder umleiten kann. Dies kann dazu führen, dass Nutzer unbemerkt auf gefälschte Webseiten gelangen.</li>
+        <li><strong>Hardware- und Konfigurationsfehler:</strong> Netzwerkstörungen durch fehlerhafte Geräte oder falsche Einstellungen.</li>
+        <li><strong>Menschliche & physische Risiken:</strong> Insider-Bedrohungen, Stromausfälle oder Sabotage.</li>
+    </ul>
+    
+    <h2>2. Vier Schutzziele</h2>
+    
+    <ol>
+        <li><strong>Verfügbarkeit (Prio 1):</strong> Der Internetknotenpunkt muss jederzeit erreichbar sein. Ein Ausfall kann zu großflächigen Störungen oder gar Zusammenbrüchen von Netzwerken führen.</li>
+        <li><strong>Integrität (Prio 2):</strong> Datenpakete müssen unverändert bleiben. Manipulierte Daten, etwa durch BGP-Hijacking, könnten für Nutzer und Unternehmen gefährlich werden</li>
+        <li><strong>Authentizität (Prio 3):</strong> Nur autorisierte Netzwerke dürfen den Knoten nutzen (Internet Service Provider, Cloud Provider...). Ohne Authentifizierung könnten sich unberechtigte Teilnehmer einwählen und Daten abfangen oder manipulieren.</li>
+        <li><strong>Vertraulichkeit (Prio 4):</strong> Da der Knotenpunkt Daten lediglich weiterleitet liegt die Verantwortung der Verschlüsselung der Kommunikation bei den beteiligten Netzwerken.</li>
+    </ol>
+    
+   <h2>3. Folgen eines Angriffs</h2>
+    <ul>
+        <li><strong>DDoS:</strong> Eine Überlastung des Knotens kann zu massiven Netzwerkausfällen führen, wodurch ganze Regionen oder Unternehmen vom Internet abgeschnitten werden können.</li>
+        <li><strong>BGP-Hijacking:</strong> Durch die Manipulation des BGP-Protokolls können Nutzer unbemerkt auf gefälschte oder gefährliche Webseiten umgeleitet werden, was Phishing, Datenklau oder Malware-Verbreitung ermöglicht.</li>
+        <li><strong>Physische Angriffe:</strong> Sabotage oder Zerstörung von Hardware kann regionale oder sogar globale Internetausfälle verursachen, insbesondere wenn keine Redundanzen vorhanden sind.</li>
+        <li><strong>Bedrohung von Innen:</strong> Böswillige Handlungen durch interne Mitarbeiter können zur geziehlten Manipulation von Daten führen, was weitreichende Schäden bei Unternehmen,etc.... hervorrufen kann.</li>
+    </ul>
+    
+    <h2>4. Fazit</h2>
+    <p>Ein Internetknotenpunkt ist eine kritische Infrastruktur mit zahlreichen Bedrohungsmöglichkeiten.</p>
+</body>
+</html>
